@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CBSE Interactive Quiz App</title>
+  <!-- Link External CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="quiz-container">
+    <h1>CBSE Science & Math Quiz</h1>
+    <p class="subtitle">Test your knowledge! Click your answer for each question below.</p>
+
+    <!--Question 1-->
+    <div class="question-card" id="q1-box">
+      <p><b>Q1. Which gas do plants absorb from the atmosphere for phoyosynthesis?</b></p>
+      <button class="answer-btn" onclick="checkAnswer(1, 'oxygen', false)">Oxygen</button>
+      <button class="answer-btn" onclick="checkAnswer(1, 'Carbon dioxide', true)">Carbon Dioxide</button>
+      <button class="answer-btn" onclick="checkAnswer(1, 'nitrogen', false)">Nitrogen</button>
+      <p class="feedback" id="feedback-1"></p>
+
+    </div>
+
+    <!--Question 2-->
+    <div class="question-card" id="q2-box">
+      <p><b>Q2. What is the value of 15 multiplied by 4?</b></p>
+      <button class="answer-btn" onclick="checkAnswer(2, '45', false)">45</button>
+      <button class="answer-btn" onclick="checkAnswer(2, '60', true)">60</button>
+      <button class="answer-btn" onclick="checkAnswer(2, '50', false)">50</button>
+      <p class="feedback" id="feedback-2"></p>
+
+    </div>
+
+    <!-- Question 3-->
+    <div class="question-card" id="q3-box">
+      <p><b>Q3. Which planet is known as the Red Planet?</b></p>
+      <button class="answer-btn" onclick="checkAnswer(3, 'mars', true)">Mars</button>
+      <button class="answer-btn" onclick="checkAnswer(3, 'venus', false)">Venus</button>
+      <button class="answer-btn" onclick="checkAnswer(3, 'jupiter', false)">Jupiter</button>
+      <p class="feedback" id="feedback-3"></p>
+
+    </div>
+
+    <!-- Question 4 -->
+    <div class="question-card" id="q4-box">
+      <p>Q4. Which is the largest moon in the Solar System?</p>
+      <button class="answer-btn" onclick="checkAnswer(4, 'titan', true)">titan</button>
+      <button class="answer-btn" onclick="checkAnswer(4, 'Phobos', false)">Phobos</button>
+      <button class="answer-btn" onclick="checkAnswer(4, 'Moon', false)"> Moon</button>
+      <p class="feedback" id="feedback-4"></p>
+
+    </div>
+
+
+    <!-- Question 5 -->
+    <div class="question-card" id="q5-box">
+      <p>Q5. What is the chemical symbol for the element Gold? </p>
+      <button class="answer-btn" onclick="checkAnswer(5, 'Ag', false)">Ag</button>
+      <button class="answer-btn" onclick="checkAnswer(5, 'Fe', false)">Fe</button>
+      <button class="answer-btn" onclick="checkAnswer(5, 'Au', true)">Au</button>
+      <p class="feedback" id="feedback-5"></p>
+
+    </div>
+    <!-- Question 6 -->
+    <div class="question-card" id="q6-box">
+      <p>Q6. What is the sum of the interior angles of a triangle?</p>
+      <button class="answer-btn" onclick="checkAnswer(6, '180 degree', false)">180 degree</button>
+      <button class="answer-btn" onclick="checkAnswer(6, '360 degree', true)">360 degree</button>
+      <button class="answer-btn" onclick="checkAnswer(6, '90 degree', false)">90 degree</button>
+      <p class="feedback" id="feedback-6"></p>
+
+    </div>
+
+    <!--Question 7-->
+    <div class="question-card" id="q7-box">
+      <p>Q7. What is the value of x in the equation: 3x - 6 = 9?</p>
+      <button class="answer-btn" onclick="checkAnswer(7, '5', true)">5</button>
+      <button class="answer-btn" onclick="checkAnswer(7, '3', false)">3</button>
+      <button class="answer-btn" onclick="checkAnswer(7, '6', false)">6</button>
+      <p class="feedback" id="feedback-7"></p>
+
+    </div>
+
+    <!--Question 8-->
+    <div class="question-card" id="q8-box">
+      <p>Q8. What is the sum of the fractions 2/3 and 1/4?</p>
+      <button class="answer-btn" onclick="checkAnswer(8, '3/7', false)">3/7</button>
+      <button class="answer-btn" onclick="checkAnswer(8, '11/12', true)">11/12</button>
+      <button class="answer-btn" onclick="checkAnswer(8, '3/12', false)">3/12</button>
+      <p class="feedback" id="feedback-8"></p>
+
+    </div>
+
+    <!--Question 9-->
+    <div class="question-card" id="q9-box">
+      <p>Q9. On the pH scale, a pure water solution with a pH of exactly 7 is considered:</p>
+      <button class="answer-btn" onclick="checkAnswer(9, 'Neutral', true)">Neutral</button>
+      <button class="answer-btn" onclick="checkAnswer(9, 'Acidic', false)">Acidic</button>
+      <button class="answer-btn" onclick="checkAnswer(9, 'Bacic', false)">Basic</button>
+      <p class="feedback" id="feedback-9"></p>
+
+    </div>
+
+    <!--Question 10-->
+    <div class="question-card" id="q10-box">
+      <p>Q10. What is the value of the expression 15-3*2+4?</p>
+      <button class="answer-btn" onclick="checkAnswer(10, '28', false)">28</button>
+      <button class="answer-btn" onclick="checkAnswer(10, '13', true)">13</button>
+      <button class="answer-btn" onclick="checkAnswer(10, '11', false)">11</button>
+      <p class="feedback" id="feedback-10"></p>
+
+    </div>
+
+
+
+    <!--Submit/Tally Section-->
+    <div class="score-section">
+      <button class="submit-btn" onclick="showFinalScore()">Show Final Score</button>
+      <h2 id="final-score-display"></h2>
+    </div>
+  </div>
+
+  <!-- Link External JavaScript -->
+  <script src="script.js"></script>
+</body>
+
+</html>
